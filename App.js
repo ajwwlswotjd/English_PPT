@@ -6,6 +6,7 @@ class App {
 		this.sectionList = $("section");
 		this.isScrolling = false;
 		window.addEventListener("keydown",this.handleWheel.bind(this));
+		window.addEventListener("resize",this.scrollSection.bind(this));
 	}
 
 	handleWheel(e){
@@ -16,22 +17,22 @@ class App {
 			if(this.current + 1 >= this.sectionList.length) return; 
 
 			//내려갈 수 있다면 다음 타겟을 구한다.
-			this.isScrolling = true;
-			let target = this.sectionList.eq(this.current + 1).offset().top;
 			this.current++;
-			$("html, body").animate({scrollTop:target + "px"},1000,()=>{
-				this.isScrolling = false;
-			});
+			this.scrollSection();
 		}else if(delta) {
 			//올라가기
 			if(this.current == 0)  return;
-			this.isScrolling = true;
-			let target = this.sectionList.eq(this.current - 1).offset().top;
 			this.current--;
+			this.scrollSection();
+		}
+	}
+
+	scrollSection(){
+		this.isScrolling = true;
+		let target = this.sectionList.eq(this.current).offset().top;
 			$("html, body").animate({scrollTop:target + "px"}, 1000, ()=>{
 				this.isScrolling = false;
-			});			
-		}
+		});
 	}
 }
 
