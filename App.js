@@ -15,7 +15,6 @@ class App {
 		if(delta > 0){
 			//더이상 못내려가면 멈추고
 			if(this.current + 1 >= this.sectionList.length) return; 
-
 			//내려갈 수 있다면 다음 타겟을 구한다.
 			this.current++;
 			this.scrollSection();
