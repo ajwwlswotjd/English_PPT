@@ -137,13 +137,8 @@ section {
 }
 
 #second > .right-part > .li-box > li {
-<<<<<<< HEAD
 	width: 500px;
 	height: 65px;
-=======
-	width: 400px;
-	height: 50px;
->>>>>>> 060ee47244d4180aa2f75cd84f5d80b5a06f1d19
 	background: #232b36;
 	position: relative;
 	border-radius: 30px;
@@ -153,11 +148,7 @@ section {
 }
 
 #second > .right-part > .li-box > li > .shape {
-<<<<<<< HEAD
 	width: 70px;
-=======
-	width: 50px;
->>>>>>> 060ee47244d4180aa2f75cd84f5d80b5a06f1d19
 	height: 110%;
 	background: #fff;
 	box-sizing: content-box;
@@ -246,11 +237,7 @@ section {
 	margin-top: 30px;
 	padding-right: 200px;
 	color: #666;
-<<<<<<< HEAD
 	margin-left: 6px;
-=======
-	margin-left: 5px;
->>>>>>> 060ee47244d4180aa2f75cd84f5d80b5a06f1d19
 }
 
 .icon-container {
@@ -281,12 +268,9 @@ section {
 #fifth {
 	background-image: url("./imgs/bg3.jpg");
 	background-size: 100% 100%;
-<<<<<<< HEAD
 }
 
 #sixth {
 	background-image: url("./imgs/bg4.jpg");
 	background-size: 100% 100%;
-=======
->>>>>>> 060ee47244d4180aa2f75cd84f5d80b5a06f1d19
 }
